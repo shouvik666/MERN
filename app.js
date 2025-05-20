@@ -30,10 +30,10 @@ app.post("/", function(req,res){
     };
     const jsonData =JSON.stringify(data);
 
-    const url = "https://us15.api.mailchimp.com/3.0/lists/b0658849b0";
+    const url = "";
     const options = {
         method: "POST",
-        auth: "shouvik:12e523cc65c0b24da0e5d4fef5992242-us15"
+        auth: ""
     };
 
     const request = https.request(url, options, function(response){
@@ -59,6 +59,3 @@ app.listen(3000, function() {
    console.log("Server is up and running in port 3000"); 
 });
 
-//12e523cc65c0b24da0e5d4fef5992242-us15  //API Key for mailchimp
-
-//b0658849b0  //List Id or Audience ID for mailchimp
