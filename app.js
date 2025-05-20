@@ -30,10 +30,10 @@ app.post("/", function(req,res){
     };
     const jsonData =JSON.stringify(data);
 
-    const url = "";
+    const url = "https";
     const options = {
         method: "POST",
-        auth: ""
+        auth: "sgh"
     };
 
     const request = https.request(url, options, function(response){
