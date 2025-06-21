@@ -31,7 +31,7 @@ app.post("/", function(req,res){
     const jsonData =JSON.stringify(data);
 
     const url = "https";
-    const options = {
+    const options = { // Options for the request
         method: "POST",
         auth: "sgh"
     };
